@@ -8,11 +8,11 @@ class Storage {
         return this.#items;
     }
     addItem(newItem) {
-        return this.#items.push(newItem);
+        this.#items.push(newItem);
     }
     removeItem(itemToRemove) {
         this.#items = this.#items.filter((item) => {
-            return item != itemToRemove;
+            return item !== itemToRemove;
         })
         
     }
